@@ -7,7 +7,7 @@ Release:	1
 Group:		Development/Python
 License:	Python
 URL:		https://pypi.org/project/keyring/
-Source0:	%{pypi_source}
+Source0:	https://files.pythonhosted.org/packages/e8/3e/4daf55c21dc38dfa39a5780fb1c9a15dbbe8d680a715b0c81c29be51662c/keyring-%{version}.tar.gz
 BuildArch:	noarch
 
 BuildRequires:	pkgconfig(python)
