@@ -16,6 +16,8 @@ BuildRequires:	python3dist(setuptools-scm)
 BuildRequires:	python3dist(toml)
 BuildRequires:  python-importlib-metadata
 BuildRequires:  python3dist(jeepney)
+BuildRequires:  python3dist(secretstorage)
+
 Requires:	python3dist(pygobject)
 %{?python_provide:%python_provide python3-keyring}
 
