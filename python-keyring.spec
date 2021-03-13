@@ -14,6 +14,7 @@ BuildRequires:	pkgconfig(python)
 BuildRequires:	python3dist(setuptools)
 BuildRequires:	python3dist(setuptools-scm)
 BuildRequires:	python3dist(toml)
+BuildRequires:  python-importlib-metadata
 Requires:	python3dist(pygobject)
 %{?python_provide:%python_provide python3-keyring}
 
