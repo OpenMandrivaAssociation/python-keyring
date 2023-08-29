@@ -2,8 +2,8 @@
 
 Name:		python-keyring
 Summary:	Python library to access the system keyring service
-Version:	23.13.1
-Release:	2
+Version:	24.2.0
+Release:	1
 Group:		Development/Python
 License:	Python
 URL:		https://pypi.org/project/keyring/
@@ -15,8 +15,8 @@ BuildRequires:	python3dist(setuptools)
 BuildRequires:	python3dist(setuptools-scm)
 BuildRequires:	python3dist(tomli)
 #BuildRequires:  python-importlib-metadata
-BuildRequires:  python3dist(jeepney)
-BuildRequires:  python3dist(secretstorage)
+BuildRequires:	python3dist(jeepney)
+BuildRequires:	python3dist(secretstorage)
 BuildRequires:	python-pip
 BuildRequires:	python-wheel
 
@@ -50,7 +50,7 @@ rm -rf %{buildroot}%{python3_sitelib}/%{pypi_name}/tests/
 
 %files
 %license LICENSE
-%doc README.rst CHANGES.rst
+%doc README.rst NEWS.rst
 %{python_sitelib}/*dist-info
 %{python_sitelib}/%{pypi_name}
 %{_bindir}/keyring
