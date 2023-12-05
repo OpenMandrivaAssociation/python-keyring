@@ -2,7 +2,7 @@
 
 Name:		python-keyring
 Summary:	Python library to access the system keyring service
-Version:	24.2.0
+Version:	24.3.0
 Release:	1
 Group:		Development/Python
 License:	Python
