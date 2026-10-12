@@ -3,7 +3,7 @@
 Name:		python-keyring
 Summary:	Python library to access the system keyring service
 Version:	25.7.0
-Release:	1
+Release:	2
 Group:		Development/Python
 License:	Python
 URL:		https://pypi.org/project/keyring/
@@ -13,6 +13,7 @@ BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(coherent.licensed)
 BuildRequires:	python%{pyver}dist(tomli)
 #BuildRequires:  python-importlib-metadata
 BuildRequires:	python%{pyver}dist(jeepney)
@@ -38,6 +39,8 @@ python-keyring-gnome.
 %autosetup -p1 -n %{pypi_name}-%{version}
 
 %build
+# The sdist is not a git checkout, so setuptools_scm needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 %py_build
 
 %install
